@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //упр1
+console.log('Упражнение1')
+  for (var i = 0; i < 3; i++) {
+    console.log("число i = " + i);
+}
+i = 0;
+while (i<3) {
+    console.log("число i = " + i);
+    i++;
+}  
+ //упр2
+console.log('Упражнение2') 
+a = 100;
+while (a>=0) {
+    console.log('Число:' + a);
+    a -= 20;
+}
+//упр3
+console.log('Упражнение3')
+var sum = 0;
+while (true) {
+    a = +prompt('a');
+    sum += a;
+    if (a == '0') { break;}
+}
+console.log('Сумма элементов' + sum);
+//упр4
+console.log('Упражнение4') 
+var i = 10;
+while (i!==15) {
+    console.log(i);
+    i++;
+}
+console.log('Сумма элементов' + sum);
+
+//упр5
+console.log('Упражнение5') 
+for (var i = 10; i < 15; i++) {
+    console.log(i);
+}
+//упр6
+console.log('Упражнение6')
+var val=0, s=0;
+do {
+    val = +prompt('a');
+    s += val * val;
+}
+while (s < 100)
+console.log("s = " + s)
+//упр7
+console.log('Упражнение7')
+var val = 0, s = 0;
+do {
+    val = +prompt('a');
+    if (val > 0) {
+        s += val + val;
+    }
+    if (val < 0) {
+        s += val * val;
+    }
+}
+while (s < 100)
+console.log("s = " + s)
+    
+    
+    
+    
+    </script>> 
+</body>
+</html>
