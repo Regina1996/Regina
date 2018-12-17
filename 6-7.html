@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+ 
+//упражнение 1 (блок схема)  упрощена! без использования 3 переменной 
+        var a =prompt('Введи первое число');
+        var b =prompt('Введи второе число');
+        
+        if (a>b){
+          alert( a + ' больше ' + b );  
+        }
+        else if (a==b){
+            alert( a + ' равно ' + b ); 
+        }
+       else{
+           alert( a + ' меньше ' + b );
+       }
+        
+
+// упражнение 2
+    
+var X = prompt('Введите число X: ') 
+var Y = prompt('Введите число Y: ') 
+
+
+if (X > Y) { 
+alert(Y +','+ X); 
+ 
+} 
+else { 
+alert(X + ',' + Y);  
+}
+
+        
+// упражнение 5
+ 
+  var A = prompt('Введите возраст папы');
+  var B = prompt('Введите возраст мамы');
+        if (A>B){
+            alert('Папа старше мамы')
+        }
+        else if (A==B)
+            alert('Папа и мама ровесники ')
+        else{
+            alert('Мама старше папы')
+        }
+      
+            
+// упражнение 7
+ 
+var A=prompt('Введите 1 значение');
+var B=prompt('Введите знак')
+var C=prompt('Введите 2 значение');
+        
+     switch(B){
+        
+        case "+":
+        alert("сумма")
+        alert(A+C)
+        break;
+        
+        case "-":
+        alert ("разность")
+        alert(A-C)
+        break;
+            
+        case "/":
+        if (C == 0){
+        alert("error: division by zero")}
+        else {
+            alert("деление")
+        alert(A/C)
+        break;    
+                     }
+        
+        case "*":
+        alert("умножение")
+        alert(A*C)
+        break; 
+                
+    }
+   
+
+   //
+var a= 5+10;
+        switch(a){
+            case 9:
+                alert('Это меньше а');
+                break;
+            case 10:
+                alert('Это а');
+                break;
+            case 11:
+                alert('Это больше а');
+                break;
+            default:
+                alert('Это не а')
+        }
+       
+
+//
+var week = []; 
+var lang = prompt('Введите язык (ru или en): '); 
+ 
+if (lang == 'ru') 
+{ 
+week = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье']; 
+alert('Название недель на Русском: ' + week); 
+} 
+
+if (lang == 'en') 
+{ 
+week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']; 
+alert('Название недель на Английском: ' + week); 
+} 
+
+
+switch (lang) { 
+case 'ru': 
+week = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье']; 
+alert('Название недель на Русском: ' + week); 
+break; 
+case 'en': 
+week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']; 
+alert('Название недель на Английском: ' + week); 
+break; 
+} 
+
+
+11//
+var slovo = prompt('Введите слово: '); 
+console.log(slovo); 
+// .split из примеров javascript.ru
+var a = slovo.split("a").length - 1; 
+var e = slovo.split("e").length - 1; 
+var i = slovo.split("i").length - 1; 
+var o = slovo.split("o").length - 1; 
+
+
+alert('Содержание в слове буквы "a": ' + a); 
+alert('Содержание в слове буквы "e": ' + e); 
+alert('Содержание в слове буквы "i": ' + i); 
+alert('Содержание в слове буквы "o": ' + o); 
+
+
+
+
+
+    </script>>
+</body>
+</html>
