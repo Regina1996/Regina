@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//упр1
+console.log('Упражнение1')
+   var A = 0, B = 0;
+
+    A = +prompt('Введите 1 число', "");
+    B = +prompt('Введите 2 число', "");
+
+    console.log(A + ' + ' + B + ' = ' + (A + B))
+    A = A + B;
+    alert(A)
+ //упр2
+console.log('Упражнение2')
+console.log('2 задание')
+    console.log('_____________________________________')
+   
+    console.log(A + '^2 ' + ' = ' + (A * A))
+    alert(A * A)
+ //упр3
+console.log('Упражнение3')   
+   var arr = [2, 4, 6, 8, 10];
+    var A = 0;
+
+    for (var i = 0; i < arr.length - 1; i++) { A += arr[i];}
+
+    console.log('Среднее арифметическое = ' + (A / (arr.length - 1)))
+
+    alert(A / (arr.length - 1));
+//упр4
+console.log('Упражнение4')   
+A = +prompt('Введите возраст', "");
+
+    if ((A >= 1) && (A <= 13)) {
+        console.log('Возрастня категория = детство');
+        alert('Возрастня категория = детство');
+    }
+    if ((A >= 14) && (A <= 25)) {
+        console.log('Возрастня категория = юность');
+        alert('Возрастня категория = юность');
+    }
+    if ((A >= 26) && (A <= 69)) {
+        console.log('Возрастня категория = зрелость');
+        alert('Возрастня категория = зрелость');
+    }
+    if ((A >= 70)) {
+        console.log('Возрастня категория = старость');
+        alert('Возрастня категория = старость');
+    }
+//упр5
+console.log('Упражнение5')   
+var arr = [-2, 4, 216, -8, 10, -114, 14, 1], max = -Infinity;
+    console.log(arr);
+    for (var i = 0; i < arr.length - 1; i++)
+    {
+        if ((arr[i] >= -10) && (arr[i] <= 10) && (arr[i] > max)) { max = arr[i];}
+    }
+
+    console.log('Максимальное значение массива (от -10 до 10) = ' + max);
+    alert('Максимальное значение массива (от -10 до 10) = ' + max);
+    
+    </script>> 
+</body>
+</html>
