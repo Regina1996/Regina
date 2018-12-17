@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab5</title>
+</head>
+<body>
+    <script>
+
+ // Упражнение 1. Проверить что получится при сложении и вычитании операндов следующих типов:
+          console.log('Упражнение 1.')
+
+          var B = true
+          var N = 22
+          var S = "ght"
+
+          console.log('B = true')
+          console.log('N = 22')
+          console.log('S = "ght"')
+          
+
+    
+          console.log(B + N)
+          console.log(B - N)
+    
+          console.log(B + B)
+          console.log(B - B)
+    
+          console.log(S + B)
+          console.log(S - B)
+   
+          console.log(S + S)
+          console.log(S - S)
+
+        
+
+    //Упражнение 2. Создайте массив А, заполнив его тремя случайными целыми числами. Выведите в консоль их произведение и сумму, а также остаток от деления последнего числа на инкремент длины массива.
+         
+          console.log('Упражнение 2.')
+          x1 = Math.floor(Math.random() * (100 - 50 + 1)) + 50
+          x2 = Math.floor(Math.random() * (100 - 50 + 1)) + 50
+          x3 = Math.floor(Math.random() * (100 - 50 + 1)) + 50
+          tmp = 1;
+          var A = [x1, x2, x3]
+          console.log('Случайный массив чисел ' + A)
+          console.log('Умножение')
+          for (var i = 0; i < A.length; i++) { 
+              tmp *= A[i];
+          }
+          console.log(tmp)
+
+          tmp = 0
+          console.log('Сложение')
+          for (var i = 0; i < A.length; i++) {
+              tmp += A[i];
+          }
+          console.log(tmp)
+          console.log('Остаток от деления последнего числа на инкремент длины массива')
+          console.log(A[2] % (A.length + 1))
+
+        
+// Упражнение 3. Напишите программу для вычисления площади произвольного треугольника по заданным сторонам.
+
+          console.log('Упражнение 3.')
+    
+          var a = 4, b = 3, c = 5;
+          var S = 0, p = 0;
+          p = (a + b + c) / 2
+          S = p * (p - a) * (p - b) * (p - c)
+          console.log('Стораны треугольника ' + a + '  ' + b + '  ' + c + '  ')
+
+          console.log('the result is: ' + Math.sqrt(S))
+
+          
+//Упражнение 4. Выясните чему будут равны значения x и y, после выполнения скрипта: 
+          console.log('Упражнение 4.')
+          var x = 4, y;
+          y = 4 * x++ //4*4=16 затем инкрементировать x
+
+          console.log('Значение y= ' + y)
+          console.log('Значение x= ' + x)//В обоих случаях x=5
+          console.log('___Второй случай, когда инкремент перед x___')
+          x = 4;//Возвращаю исходное значение переменной
+          y = 4 * ++x
+          //Наоборот инкремент выполняется первым действием, а затем умножение (4*5)
+          console.log('Значение y= ' + y)
+          console.log('Значение x= ' + x)//В обоих случаях x=5
+          
+//Упражнение 5. Вычислите значение a в уме:
+          console.log('Упражнение 5.')
+          var a = 2
+          a *= 2 + 5  //a=a*(2+7)
+          console.log(a)//14
+          var a = 3, c = 2 + ++a  //a=4; c=2+4;
+          a = a + c   //a=4+6
+          console.log(a)//10
+          var a = 3, c = 2 + a++  //a=3; c=2+3; a=4;
+          a = a + c //a=a+5
+          console.log(a)//9
+
+    
+    </script>
+</body>
+</html>
